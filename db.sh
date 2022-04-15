@@ -1,9 +1,5 @@
 #!/bin/bash
-USR="moustafa"
-PASSWORD="1234"
-DBNAME="newDb"  #${1}   #tmp value to debug
-T1="inv_master"
-T2="inv_detail"
+
 function create {
     # create database if not exits
     mysql -u ${USR} -p${PASSWORD}  -e "CREATE DATABASE IF NOT EXISTS ${DBNAME}"
@@ -68,10 +64,5 @@ function show {
     mysql -u ${USR} -p${PASSWORD}  -e "SELECT * FROM ${DBNAME}.${T2}"
 
 }
-# show
-# delete
-# show
-
-# exit 0 
 
 

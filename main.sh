@@ -1,7 +1,7 @@
 #!/bin/bash
 USR="moustafa"
 PASSWORD="1234"
-DBNAME="newDb"  #${1}   #tmp value to debug
+DBNAME="newDb"  
 T1="inv_master"
 T2="inv_detail"
 
@@ -14,8 +14,6 @@ T2="inv_detail"
 source menu.sh
 source checker.sh
 source db.sh
-# checkInvoice 1
 displayMenu
 
-# checkInvoice 165434
 exit 0 

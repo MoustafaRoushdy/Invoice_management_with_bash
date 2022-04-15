@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source db.sh
 function displayMenu {
     local OP=0
     while [ ${OP} -ne 4 ]
@@ -25,6 +24,3 @@ function displayMenu {
     done
     
 }
-# displayMenu
-
-# exit 0 

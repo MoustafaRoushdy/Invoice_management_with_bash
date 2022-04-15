@@ -1,6 +1,6 @@
 #!/bin/bash
 USR="moustafa"
-PASSWORD="1234"
+PASSWORD=$(cat passfile.txt)
 DBNAME="newDb"  
 T1="inv_master"
 T2="inv_detail"

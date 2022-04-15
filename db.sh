@@ -14,11 +14,11 @@ function display {
     read -p "please enter the invoice id to display:" INVID
     set -x 
     [ $(checkInvoice ${INVID}) = 1 ] || exit 1
-    set +x
     echo "###################inv master################################"
     mysql -u ${USR} -p${PASSWORD}  -e "SELECT * FROM ${DBNAME}.${T1} WHERE invID = ${INVID}"
+    set +x
     echo  "##################inv details################################"
-    mysql -u ${USR} -p${PASSWORD}  -e "SELECT * FROM ${DBNAME}.${T2} WHERE invID = ${INVID}"
+    mysql -u ${USR} -p${PASSWORD}  -e "SELECT * FROM ${DBNAME}.${T2} WHERE invID = ${INVID}" 2>/dev/null
 
 
 }
